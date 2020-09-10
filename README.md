@@ -1,5 +1,6 @@
 # umi project
-- A react h5 project build with umijs
+
+> A react h5 project build with umijs
 - 技术栈：react, less, umijs（搭建框架，路由...）,
 - dva（管理数据模型）,  umi-request（接口请求）, viewport（窗口自适应）
 
@@ -58,6 +59,7 @@ npm run build:dev
 ## 说明
 - umijs自带antd和antd-mobile包
 - 命令行的变量如：APP_ENV=development，得在.umirc中define下
+- 去掉命令行“prettier”中的单引号（Fix quote cause prettier error on Windows）
 - 部分解释已备注在代码注释中
 
 

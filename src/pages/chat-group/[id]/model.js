@@ -1,15 +1,13 @@
-import {getGroupDetails} from 'services'
+import { getGroupDetails } from 'services';
 
 export default {
-  namespace: 'groupDetails',
+    namespace: 'groupDetails',
 
-  state: {},
+    state: {},
 
-  effects: {
-
-    *getGroupDetails({payload}, {call}) {
-      return yield call(getGroupDetails, payload)
+    effects: {
+        *getGroupDetails({ payload }, { call }) {
+            return yield call(getGroupDetails, payload);
+        },
     },
-
-  },
-}
+};

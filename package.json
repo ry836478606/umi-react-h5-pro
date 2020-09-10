@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cross-env APP_ENV=development PORT=3000 umi dev",
+    "build:dev": "cross-env APP_ENV=production-development umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^5.0.12",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.2.19",
+    "lib-flexible": "^0.3.2",
+    "lint-staged": "^10.0.7",
+    "lodash": "^4.17.20",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.12.0",
+    "umi": "^3.2.19",
+    "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-pxtorem": "^5.1.1"
+  }
+}

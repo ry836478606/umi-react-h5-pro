@@ -50,4 +50,7 @@ export default defineConfig({
         // webpack definePlugin直接将console.log(process.env.APP_ENV)这句给做了字符串替换，直接搞成了console.log(123)具体值
         'process.env.APP_ENV': process.env.APP_ENV,
     },
+    // 非根路径的项目地址（用于前端路由访问）
+    base: '/umi-react-h5-pro/',
+    publicPath: './',
 });

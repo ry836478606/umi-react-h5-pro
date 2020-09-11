@@ -18,7 +18,6 @@
       "prettier --write"
     ],
     "*.ts?(x)": [
-      "eslint --parser=typescript --write",
       "prettier --parser=typescript --write"
     ]
   },

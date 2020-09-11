@@ -3,6 +3,7 @@
 > A react h5 project build with umijs
 - 技术栈：react, less, umijs（搭建框架，路由...）,
 - dva（管理数据模型）,  umi-request（接口请求）, viewport（窗口自适应）
+- 预览地址：https://ry836478606.github.io/umi-react-h5-pro/
 
 
 ## Getting Started
